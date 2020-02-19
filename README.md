@@ -30,7 +30,7 @@ npm i
 const hoge = () => {
   return 'hoge'
 }
-const hello = name => `Hello ${name}! & ${hoge()}!`
+const hello = name => `Hello ${name}! & ${hoge()}!`;
 const hello2 = name => `Hello ${namae}!`
 ```
 
