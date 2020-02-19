@@ -24,17 +24,33 @@ npm i
 
 ## 動作確認
 
-プロジェクトルート直下に src フォルダを作成し、src フォルダに index.js を作成して以下のコードを貼り付けて見てください（保存はしないでください）。
+### コーディング確認
+
+プロジェクトルート直下に src フォルダを作成し、src フォルダに hoge.js を作成して以下のコードを貼り付けて見てください（保存はしないでください）。
 
 ```js
 const hoge = () => {
   return 'hoge'
 }
-const hello = name => `Hello ${name}! & ${hoge()}!`;
+const hello = name => `Hello ${name}! & ${hoge()}!`
 const hello2 = name => `Hello ${namae}!`
 ```
 
 VSCode 上で赤波線が 5 箇所出ているでしょうか？問題なく表示されていれば ESLint は正常に動いています！  
 続いて保存してみましょう。4 行目のセミコロンが消えて赤波線が 4 箇所になりましたか？そうなっていれば Prettir も正常に動いています！
+
+### 動作確認
+
+以下のコマンドを実行すると「2」と表示されるかと思います。
+
+```
+node ./src/index.js abc def
+```
+
+以下のコマンドを実行すると「args error」と表示されるかと思います。
+
+```
+node ./src/index.js
+```
 
 それでは JavaScript の学習を始めていきましょう！
