@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ut": "jest",
-    "precommit": "npx jest && npx prettier --write './src/**/*.js'"
+    "ut": "jest"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +15,18 @@
     "eslint-plugin-jest": "^23.7.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
+    "lint-staged": "^10.0.7",
     "prettier": "^1.19.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write './src/**/*.js'",
+      "prettier --write './__tests__/**/*.js'"
+    ]
   }
 }
