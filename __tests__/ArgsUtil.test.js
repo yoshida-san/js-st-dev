@@ -1,4 +1,3 @@
-// import a from '../src/ArgsUtil'
 const ArgsUtil = require('../src/ArgsUtil')
 
 test('引数有効判定テスト', () => {
