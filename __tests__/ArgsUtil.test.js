@@ -31,7 +31,7 @@ describe('有効引数個数テスト', () => {
 })
 
 describe('モード確認テスト', () => {
-  it('argsが[null, null, "add"]の時のモードが"edit"であること', () => {
+  it('argsが[null, null, "add"]の時のモードが"add"であること', () => {
     process.argv = [null, null, 'add']
     expect(new ArgsUtil().getMode()).toEqual('add')
   })
