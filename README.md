@@ -60,4 +60,8 @@ node ./src/index.js edit hoge
 node ./src/index.js
 ```
 
+### pre-commit
+
+commit 時に Lint 警告の fix、formatter 適用、テストコード実行が自動で実行されます。VSCode でコードを書く時は AutoSave 時に formatter の適用や Lint 警告の fix は行われますが、フォーマットや Lint を意識してテスタブルなコードを書くように意識してみましょう。
+
 それでは JavaScript の学習を始めていきましょう！
