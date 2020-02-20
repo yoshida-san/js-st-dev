@@ -39,7 +39,7 @@ describe('モード確認テスト', () => {
     process.argv = [null, null, 'edit']
     expect(new ArgsUtil().getMode()).toEqual('edit')
   })
-  it('argsが[null, null, "delete"]の時のモードが"edit"であること', () => {
+  it('argsが[null, null, "delete"]の時のモードが"delete"であること', () => {
     process.argv = [null, null, 'delete']
     expect(new ArgsUtil().getMode()).toEqual('delete')
   })
