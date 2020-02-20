@@ -48,10 +48,10 @@ Ran all test suites.
 
 ### 実動
 
-以下のコマンドを実行すると「2」と表示されるかと思います。
+以下のコマンドを実行すると「edit」と表示されるかと思います。
 
 ```
-node ./src/index.js abc def
+node ./src/index.js edit hoge
 ```
 
 以下のコマンドを実行すると「args error」と表示されるかと思います。
