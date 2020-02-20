@@ -1,33 +1,33 @@
 {
-        "name": "js-st-dev",
-        "version": "1.0.0",
-        "description": "",
-        "main": "index.js",
-        "scripts": {
-                "ut": "jest"
-        },
-        "keywords": [],
-        "author": "",
-        "license": "ISC",
-        "devDependencies": {
-                "@babel/plugin-proposal-class-properties": "^7.8.3",
-                "babel-eslint": "^10.0.3",
-                "eslint": "^6.8.0",
-                "eslint-plugin-jest": "^23.7.0",
-                "husky": "^4.2.3",
-                "jest": "^25.1.0",
-                "lint-staged": "^10.0.7",
-                "prettier": "^1.19.1"
-        },
-        "husky": {
-                "hooks": {
-                        "pre-commit": "lint-staged"
-                }
-        },
-        "lint-staged": {
-                "*.{js,jsx}": [
-                        "prettier --write './src/**/*.js'",
-                        "prettier --write './__tests__/**/*.js'"
-                ]
-        }
+  "name": "js-st-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ut": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.7.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write './src/**/*.js'",
+      "prettier --write './__tests__/**/*.js'"
+    ]
+  }
 }
