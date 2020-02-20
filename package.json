@@ -29,7 +29,8 @@
       "prettier --write './src/**/*.js'",
       "prettier --write './__tests__/**/*.js'",
       "eslint --fix './src/**/*.js'",
-      "eslint --fix './__tests__/**/*.js'"
+      "eslint --fix './__tests__/**/*.js'",
+      "jest"
     ]
   }
 }
