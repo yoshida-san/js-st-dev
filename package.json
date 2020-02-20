@@ -27,7 +27,9 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "prettier --write './src/**/*.js'",
-      "prettier --write './__tests__/**/*.js'"
+      "prettier --write './__tests__/**/*.js'",
+      "eslint --fix './src/**/*.js'",
+      "eslint --fix './__tests__/**/*.js'"
     ]
   }
 }
