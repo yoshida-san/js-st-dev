@@ -15,13 +15,5 @@
     "eslint-plugin-jest": "^23.7.0",
     "jest": "^25.1.0",
     "prettier": "^1.19.1"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js"
-    ],
-    "testMatch": [
-      "**/__tests__/**/*.js"
-    ]
   }
 }
